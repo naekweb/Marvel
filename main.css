@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+body {
+    background-image: url(assets/city.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* SOCIALS */
+
+.socials {
+    position: fixed;
+    left: 20px;
+    top: 200px;
+}
+
+.socials div {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.socials div:hover {
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+}
+
+.socials .fb {
+    background: #3c5a9a;
+}
+
+.socials .tw {
+    background: #2faadf;
+}
+
+.socials .inst {
+    background: #b33021;
+}
+
+.socials .pin {
+    background: #ca232a;
+}
+
+/* HEADER */
+
+header {
+    padding: 40px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .burger {
+    display: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .logo {
+    width: 150px;
+}
+
+header nav a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 60px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header nav a:hover {
+    color: #f11e23;
+}
+
+header nav a i {
+    margin-right: 10px;
+}
+
+/* MAIN */
+
+main .container {
+    background: rgba(51, 51, 51, 0.686);
+    padding: 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+main .container h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+main .container h1 i {
+    margin-right: 10px;
+}
+
+/* GRID */ 
+
+main .grid {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .grid .item {
+    width: 31%;
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+main .grid .item .image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 150%;
+    margin-bottom: 40px;
+}
+
+main .grid .item1 .image {
+    background-image: url(films/article_47.jpg);
+}
+
+main .grid .item2 .image {
+    background-image: url(films/black_widow.jpg);
+}
+
+main .grid .item3 .image {
+    background-image: url(films/captain_marvel.jpg);
+}
+
+main .grid .item4 .image {
+    background-image: url(films/iron_man.jpg);
+}
+
+main .grid .item5 .image {
+    background-image: url(films/shang-chi.jpg);
+}
+
+main .grid .item6 .image {
+    background-image: url(films/thor.jpg);
+}
+
+main .grid .item h2 {
+    margin-bottom: 10px;
+}
+
+main .grid .item p {
+    margin-bottom: 30px;
+}
+
+main .grid .item a {
+    background: #e69924;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+main .grid .item a:hover {
+    background: #f11e23;
+}
+
+main .grid .item a i {
+    margin-right: 10px;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .socials {
+        left: 0;
+        top: inherit;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .socials div {
+        width: 20%;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container .burger {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .logo {
+        width: 110px;
+    }
+
+    main .grid .item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    main .grid .item {
+        width: 100%;
+    }
+}
